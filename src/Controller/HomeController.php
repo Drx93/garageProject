@@ -82,6 +82,7 @@ class HomeController extends AbstractController
             'user_role' => $userRole
         ]);
     }
+    
 
     #[Route('/login', name: 'app_login', methods: ['GET'])]
     public function login(Request $request, UserRepository $userRepository): Response
@@ -144,4 +145,5 @@ class HomeController extends AbstractController
 
         return $this->render('admin.html.twig');
     }
+    
 }
